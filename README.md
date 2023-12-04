@@ -12,7 +12,7 @@ Here is the PyTorch implementation of our Very Deep Local Aggregation Networks f
   conda install llvm-openmp
   conda install plyfile=0.8.1 scipy=1.10.1 conda install h5py=3.8.0
   ```
--Install pointnet2_ops:
+- Install pointnet2_ops:
   ```
   cd utils/pointnet2_ops_lib/
   pip install .
