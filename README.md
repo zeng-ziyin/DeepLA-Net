@@ -1,6 +1,6 @@
 # DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis
 
-Here is the PyTorch implementation of our Very Deep Local Aggregation Networks for Point Cloud Analysis. The current version only releases project repo. The full code will be coming soon.
+Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation Networks for Point Cloud Analysis_**. The current version only releases project repo. The full code will be coming soon.
 
 ## Highlights
 - *Dec, 2023*: We released our project repo for PTv3, if you have any questions related to our work, please feel free to open an issue.
