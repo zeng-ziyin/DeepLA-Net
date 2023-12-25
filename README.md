@@ -1,6 +1,20 @@
 # DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis
 
-Here is the PyTorch implementation of our Very Deep Local Aggregation Networks for Point Cloud Analysis. The current version only releases our key contributions. The full code will be coming soon.
+Here is the PyTorch implementation of our Very Deep Local Aggregation Networks for Point Cloud Analysis. The current version only releases project repo. The full code will be coming soon.
+
+## Highlights
+- *Dec, 2023*: We released our project repo for PTv3, if you have any questions related to our work, please feel free to open an issue.
+
+## Schedule
+To make our polished code and reproduced experiments available as soon as possible, this time we will release what we already finished immediately after a validation instead of releasing them together after all work is done. We list a task list as follows:
+
+- [ ] Release model code of DeepLA-Net;
+- [ ] Release scratched config of semantic segmentation;
+  - [ ] ScanNet
+  - [ ] S3DIS
+  - [ ] S3DIS 6-Fold (with cross-validation script)
+- [ ] Release scratched config of object classification;
+- [ ] Release scratched config of part segmentation;
 
 ## Dependencies
 - Ubuntu: 18.04 or higher
