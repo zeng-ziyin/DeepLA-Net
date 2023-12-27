@@ -3,8 +3,8 @@
 Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation Networks for Point Cloud Analysis_**. The current version only releases project repo. The full code will be coming soon.
 
 <div align='left'>
-<img src="comparison.png" alt="teaser" width="35%" />
-<img src="DeepLA-Net.gif" alt="teaser" width="64%" />
+<img src="comparison.png" alt="teaser" width="36%" />
+<img src="DeepLA-Net.gif" alt="teaser" width="63%" />
 </div>
 
 ## Highlights
