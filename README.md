@@ -6,6 +6,10 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 <img src="comparison.png" alt="teaser" width="400" />
 </div>
 
+<div align='right'>
+<img src="DeepLA-Net.gif" alt="teaser" width="400" />
+</div>
+
 ## Highlights
 - *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
 
