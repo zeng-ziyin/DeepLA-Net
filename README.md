@@ -4,7 +4,7 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 
 <div align='left'>
 <img src="comparison.png" alt="teaser" width="350" />
-<img src="DeepLA-Net.gif" alt="teaser" width="650" />
+<img src="DeepLA-Net.gif" alt="teaser" width="600" />
 </div>
 
 ## Highlights
