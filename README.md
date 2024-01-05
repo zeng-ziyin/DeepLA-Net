@@ -38,6 +38,3 @@ To make our polished code and reproduced experiments available as soon as possib
   cd utils/pointnet2_ops_lib/
   pip install .
   ```
-
-## Acknowledgement
-The repo is inspirited by several repos, e.g., [pointnet2](https://github.com/charlesq34/pointnet2), [pointcept](https://github.com/Pointcept/Pointcept), and [DeLA](https://github.com/Matrix-ASC/DeLA).
