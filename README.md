@@ -39,3 +39,7 @@ To make our polished code and reproduced experiments available as soon as possib
   cd utils/pointnet2_ops_lib/
   pip install .
   ```
+
+## Demo
+
+<p align="center"> <a href="https://www.youtube.com/watch?v=ecyplwlPONQ"><img src="DeepLANet_demo.jpg" width="80%"></a> </p>
