@@ -8,8 +8,8 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 </div>
 
 ## Highlights
-- *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
 - *Jan, 2024*: We released the model code of DeepLA-Net. And the next step will be released after receiving clear review comments.
+- *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
 
 ## Schedule
 To make our polished code and reproduced experiments available as soon as possible, this time we will release what we already finished immediately after a validation instead of releasing them together after all work is done. We list a task list as follows:
