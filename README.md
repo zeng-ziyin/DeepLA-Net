@@ -18,7 +18,6 @@ To make our polished code and reproduced experiments available as soon as possib
 - [ ] Release scratched config of semantic segmentation;
   - [ ] ScanNet
   - [ ] S3DIS
-  - [ ] S3DIS 6-Fold (with cross-validation script)
 - [ ] Release scratched config of object classification;
 - [ ] Release scratched config of part segmentation;
 
