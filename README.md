@@ -7,6 +7,9 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 <img src="DeepLA-Net.gif" alt="teaser" width="62%" />
 </div>
 
+## Demo
+<p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="DeepLANet_demo.jpg" width="98%"></a> </p>
+
 ## Highlights
 - *Jan, 2024*: We released the model code of DeepLA-Net. And the next step will be released after receiving clear review comments.
 - *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
@@ -38,7 +41,3 @@ To make our polished code and reproduced experiments available as soon as possib
   cd utils/pointnet2_ops_lib/
   pip install .
   ```
-
-## Demo
-
-<p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="DeepLANet_demo.jpg" width="98%"></a> </p>
