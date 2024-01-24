@@ -133,8 +133,8 @@ class Stage(nn.Module):
         self.drop = DropPath(args.head_drops[depth])
 
         self.sem_sup = nn.Sequential(
-            nn.BatchNorm1d(dim, momentum=args.bn_momentum),
-            nn.Linear(dim, args.num_classes, bias=False),
+            nn.BatchNorm1d(3, momentum=args.bn_momentum),
+            nn.Linear(3, args.num_classes, bias=False),
         )
         nn.init.constant_(self.sem_sup[0].weight, (args.dims[0] / dim) ** 0.5)
 
@@ -216,8 +216,8 @@ class Stage(nn.Module):
             closs = F.mse_loss(rel_p, rel_cor)
             sub_spa = sub_spa + closs if sub_spa is not None else closs
 
-        sem = self.sem_sup(x)
-        sub_sem = sub_sem.append(sem) if sub_sem is not None else [sem]
+            sem = self.sem_sup(rel_p)
+            sub_sem = sub_sem.append(sem) if sub_sem is not None else [sem]
 
         # upsampling
         x = self.postproj(x)
