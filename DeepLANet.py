@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).absolute().parent.parent))
 from utils.timm.models.layers import DropPath
-from utils.cutils import vector_feature
+from utils.cutils import knn_edge_maxpooling
 
 def checkpoint(function, *args, **kwargs):
     return torch_checkpoint(function, *args, use_reentrant=False, **kwargs)
@@ -22,7 +22,7 @@ class VFR(nn.Module):
     def forward(self, x, knn):
         B, N, C = x.shape
         x = self.linear(x)
-        x = vector_feature(x, knn, self.training)
+        x = knn_edge_maxpooling(x, knn, self.training)
         x = self.bn(x.view(B*N, -1)).view(B, N, -1)
         return x
 
@@ -133,10 +133,12 @@ class Stage(nn.Module):
         self.drop = DropPath(args.head_drops[depth])
 
         self.sem_sup = nn.Sequential(
+            nn.Dropout(0.5),
             nn.BatchNorm1d(3, momentum=args.bn_momentum),
             nn.Linear(3, args.num_classes, bias=False),
         )
-        nn.init.constant_(self.sem_sup[0].weight, (args.dims[0] / dim) ** 0.5)
+        # nn.init.constant_(self.sem_sup[0].weight, (args.dims[0] / dim) ** 0.5)
+        # self.apply(self._init_weights)
 
         self.postproj = nn.Sequential(
             nn.BatchNorm1d(dim, momentum=args.bn_momentum),
@@ -161,7 +163,7 @@ class Stage(nn.Module):
         x = x.squeeze(0)
         return x
 
-    def forward(self, x, xyz, prev_knn, indices, pts_list):
+    def forward(self, x, xyz, prev_knn, indices, pts_list, sub_spa=None, sub_sem=None):
         """
         x: N x C
         """
@@ -200,24 +202,29 @@ class Stage(nn.Module):
         pts = pts_list.pop() if pts_list is not None else None
         x = checkpoint(self.local_aggregation, x, pe, knn, pts) if self.training and self.cp else self.local_aggregation(x, pe, knn, pts)
 
-        # get subsequent feature maps
-        if not self.last:
-            sub_x, sub_spa, sub_sem = self.sub_stage(x, xyz, knn, indices, pts_list)
-        else:
-            sub_x = sub_spa = None
-            sub_sem = []
-
         # Deep Supervision
         if self.training:
-            rel_cor = torch.max(xyz[knn.squeeze(0)] - xyz.unsqueeze(1), dim=1, keepdim=False)[0]
+            # spa
+            rel_cor = xyz[knn.squeeze(0)] - xyz.unsqueeze(1)
             rel_cor.mul_(self.cor_std)
-            rel_p = torch.max(x[knn.squeeze(0)] - x.unsqueeze(1), dim=1, keepdim=False)[0]
-            rel_p = self.cor_head(rel_p)
+            rel_p = self.cor_head(x)
+            rel_p = rel_p[knn.squeeze(0)] - rel_p.unsqueeze(1)
             closs = F.mse_loss(rel_p, rel_cor)
             sub_spa = sub_spa + closs if sub_spa is not None else closs
 
-            sem = self.sem_sup(rel_p)
-            sub_sem = sub_sem.append(sem) if sub_sem is not None else [sem]
+            # sem
+            sem = self.sem_sup(torch.max(rel_p, dim=1, keepdim=False)[0])
+            if sub_sem is not None:
+                sub_sem.append(sem)
+            else:
+                sub_sem = [sem]
+
+        # get subsequent feature maps
+        if not self.last:
+            sub_x, sub_spa, sub_sem = self.sub_stage(x, xyz, knn, indices, pts_list, sub_spa, sub_sem)
+        else:
+            sub_x = None
+            self.spa, self.sem = sub_spa, sub_sem
 
         # upsampling
         x = self.postproj(x)
@@ -240,7 +247,6 @@ class DeepLA_semseg(nn.Module):
         out_dim = args.num_classes
 
         self.seg_head = nn.Sequential(
-            nn.BatchNorm1d(hid_dim, momentum=args.bn_momentum),
             nn.BatchNorm1d(hid_dim, momentum=args.bn_momentum),
             args.act(),
             nn.Linear(hid_dim, hid_dim//2),
