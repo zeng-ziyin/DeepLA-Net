@@ -45,8 +45,8 @@ To make our polished code and reproduced experiments available as soon as possib
 
 ## Data Preparation
 ### S3DIS
-You need to first change the data path in the S3DIS/config file
 - Download S3DIS data by filling this [S3DIS](http://buildingparser.stanford.edu/dataset.html).
+- Change the data path in the S3DIS/config file
 - Run preprocessing code for S3DIS as follows:
   ```
   cd S3DIS
