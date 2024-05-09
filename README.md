@@ -65,6 +65,7 @@ To make our polished code and reproduced experiments available as soon as possib
   python test.py
   ```
 - S3DIS Area5 Segmentation Results
+
 | Year | Model | Val mIoU | Weights|
 | :---: | :---: | :---: | :-----: |
 | ICCV 2021 | PT v1 | 70.4% | - |
