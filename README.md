@@ -11,16 +11,17 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 <p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="DeepLANet_demo.jpg" width="98%"></a> </p>
 
 ## Highlights
-- *Jan, 2024*: We released the model code of DeepLA-Net. And the next step will be released after receiving clear review comments.
+- *May, 2024*: We released the Full Code and Pretrain Weights of S3DIS. And the next step will be released after receiving clear review comments.
+- *Jan, 2024*: We released the model code of DeepLA-Net. 
 - *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
 
 ## Schedule
 To make our polished code and reproduced experiments available as soon as possible, this time we will release what we already finished immediately after a validation instead of releasing them together after all work is done. We list a task list as follows:
 
 - [x] Release model code of DeepLA-Net;
-- [ ] Release scratched config of semantic segmentation;
+- [x] Release scratched config of semantic segmentation;
   - [ ] ScanNet
-  - [ ] S3DIS
+  - [x] S3DIS
 - [ ] Release scratched config of object classification;
 - [ ] Release scratched config of part segmentation;
 
