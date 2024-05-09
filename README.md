@@ -76,4 +76,4 @@ To make our polished code and reproduced experiments available as soon as possib
 
 ### ScanNet
 - ScanNet Testset Segmentation Results
-<p align="center"> <img src="figs/scannet.jpg" width="98%"></p>
+<p align="center"> <img src="figs/scannet.png" width="100%"> </p>
