@@ -45,7 +45,7 @@ To make our polished code and reproduced experiments available as soon as possib
 
 ## Data Preparation
 ### S3DIS
-- Download S3DIS data by filling this [[here]](http://buildingparser.stanford.edu/dataset.html).
+- Download S3DIS data by filling this [[here](http://buildingparser.stanford.edu/dataset.html)].
 - Change the data path in the S3DIS/config file
 - Run preprocessing code for S3DIS as follows:
   ```
@@ -67,6 +67,6 @@ testing on S3DIS:
 S3DIS Segmentation Results
 | Year | Model | Val mIoU | Weights|
 | :---: | :---: | :---: | :-----: |
-| 2024 | DeepLA-Net (Ours) | 75.8% | [[link]](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing) |
+| 2024 | DeepLA-Net (Ours) | 75.8% | [[link](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing)] |
 
 
