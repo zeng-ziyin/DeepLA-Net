@@ -56,15 +56,15 @@ To make our polished code and reproduced experiments available as soon as possib
 
 ## Train & Test
 ### S3DIS
-training on S3DIS:
+- training on S3DIS:
   ```
   python train.py
   ```
-testing on S3DIS:
+- testing on S3DIS:
   ```
   python test.py
   ```
-S3DIS Area5 Segmentation Results
+- S3DIS Area5 Segmentation Results
 | Year | Model | Val mIoU | Weights|
 | :---: | :---: | :---: | :-----: |
 | ICCV 2021 | PT v1 | 70.4% | - |
