@@ -64,9 +64,13 @@ testing on S3DIS:
   ```
   python test.py
   ```
-S3DIS Segmentation Results
+S3DIS Area5 Segmentation Results
 | Year | Model | Val mIoU | Weights|
 | :---: | :---: | :---: | :-----: |
+| ICCV 2021 | PT v1 | 70.4% | - |
+| NIPS 2022 | PointNeXt | 70.8% | - |
+| CVPR 2023 | PointMeta | 72.0% | - |
+| CVPR 2024 | PT v3 | 74.8% | - |
 | 2024 | DeepLA-Net (Ours) | 75.8% | [[link](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing)] |
 
 
