@@ -64,7 +64,7 @@ To make our polished code and reproduced experiments available as soon as possib
   ```
   python test.py
   ```
-- S3DIS Area5 Segmentation Results
+- S3DIS Area5 Segmentation Results.
 
 | Year | Model | Val mIoU | Weights|
 | :---: | :---: | :---: | :-----: |
@@ -75,5 +75,5 @@ To make our polished code and reproduced experiments available as soon as possib
 | 2024 | DeepLA-Net (Ours) | 75.8% | [[link](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing)] |
 
 ### ScanNet
-- ScanNet Testset Segmentation Results
+- ScanNet Testset Segmentation Results. NO.1 among fully supervised methods, NO.5 among all methods. Note that, methods before ours all used additional data for training.
 <p align="center"> <img src="figs/scannet.png" width="100%"> </p>
