@@ -52,7 +52,7 @@ To make our polished code and reproduced experiments available as soon as possib
   cd S3DIS
   python prepare_s3dis.py
   ```
-- (Alternative) Our preprocess data can also be downloaded [[here]()], please agree the official license before download it.
+- (Alternative) Our preprocess data can also be downloaded [[here](https://drive.google.com/file/d/1dU4ZpGp9glQQsGEK3bsQ9fsRbjKWA32V/view?usp=drive_link)], please agree the official license before download it.
 
 ## Train & Test
 ### S3DIS
