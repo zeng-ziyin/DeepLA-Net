@@ -42,3 +42,18 @@ To make our polished code and reproduced experiments available as soon as possib
   cd utils/pointnet2_ops_lib/
   pip install .
   ```
+
+## Data Preparation
+### S3DIS
+You need to first change the data path in the S3DIS/config file
+- Download S3DIS data by filling this [S3DIS](http://buildingparser.stanford.edu/dataset.html).
+- Run preprocessing code for S3DIS as follows:
+  ```
+  cd S3DIS
+  python prepare_s3dis.py
+  ```
+- (Alternative) Our preprocess data can also be downloaded [[here]()], please agree the official license before download it.
+
+
+
+https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing
