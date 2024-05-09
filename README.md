@@ -3,12 +3,12 @@
 Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation Networks for Point Cloud Analysis_**. 
 
 <div align='left'>
-<img src="comparison.png" alt="teaser" width="37%" />
-<img src="DeepLA-Net.gif" alt="teaser" width="62%" />
+<img src="figs/comparison.png" alt="teaser" width="37%" />
+<img src="figs/DeepLA-Net.gif" alt="teaser" width="62%" />
 </div>
 
 ## Demo
-<p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="DeepLANet_demo.jpg" width="98%"></a> </p>
+<p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="figs/DeepLANet_demo.jpg" width="98%"></a> </p>
 
 ## Highlights
 - *May, 2024*: We released the Full Code and Pretrain Weights of S3DIS. And the next step will be released after receiving clear review comments.
@@ -74,4 +74,6 @@ To make our polished code and reproduced experiments available as soon as possib
 | CVPR 2024 | PT v3 | 74.8% | - |
 | 2024 | DeepLA-Net (Ours) | 75.8% | [[link](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing)] |
 
-
+### ScanNet
+- ScanNet Testset Segmentation Results
+<p align="center"> <img src="figs/scannet.jpg" width="98%"></p>
