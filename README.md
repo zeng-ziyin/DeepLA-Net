@@ -66,7 +66,7 @@ testing on S3DIS:
   ```
 S3DIS Segmentation Results
 | Year | Model | Val mIoU | Weights|
-| :---: | :---: | :---: | :---: |
-| 2024 | DeepLA-Net (Ours) | 75.8% | | [link](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing) 
+| :---: | :---: | :---: | :-----: |
+| 2024 | DeepLA-Net (Ours) | 75.8% | | [[link]](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing) 
 
 
