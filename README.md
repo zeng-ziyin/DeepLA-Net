@@ -7,9 +7,6 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 <img src="figs/DeepLA-Net.gif" alt="teaser" width="62%" />
 </div>
 
-## Demo
-<p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="figs/DeepLANet_demo.jpg" width="98%"></a> </p>
-
 ## Highlights
 - *May, 2024*: We released the Full Code and Pretrain Weights of S3DIS. And the next step will be released after receiving clear review comments.
 - *Jan, 2024*: We released the model code of DeepLA-Net. 
@@ -77,3 +74,6 @@ To make our polished code and reproduced experiments available as soon as possib
 ### ScanNet
 - ScanNet Testset Segmentation Results. NO.1 among fully supervised methods, NO.5 among all methods. Note that, methods ranked before ours all used additional data for training.
 <p align="center"> <img src="figs/scannet.png" width="100%"> </p>
+
+## Demo
+<p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="figs/DeepLANet_demo.jpg" width="98%"></a> </p>
