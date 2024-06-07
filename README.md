@@ -72,7 +72,8 @@ To make our polished code and reproduced experiments available as soon as possib
 | 2024 | DeepLA-Net (Ours) | 75.8% | [[link](https://drive.google.com/drive/folders/1Cxfq5VTVWcvnD9SLIBfEDRlMFOoMEjzK?usp=sharing)] |
 
 ### ScanNet
-- ScanNet Testset Segmentation Results. NO.1 among fully supervised methods, NO.5 among all methods. Note that, methods ranked before ours all used additional data for training. ResLFE_HDS means the two modules in our paper (Residual Local Feature Extraction "ResLFE" and Hybird Deep Supervision "HDS")
+- ScanNet Testset Segmentation Results. NO.1 among fully supervised methods, NO.5 among all methods. Note that, methods ranked before ours all used additional data for training.
+- ResLFE_HDS means the two modules in our paper (Residual Local Feature Extraction "ResLFE" and Hybird Deep Supervision "HDS")
 <p align="center"> <img src="figs/scannet.png" width="100%"> </p>
 
 ## Demo
