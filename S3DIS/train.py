@@ -13,7 +13,7 @@ from utils.timm.optim import create_optimizer_v2
 import utils.util as util
 from deepla_semseg import DeepLA_semseg
 from time import time, sleep
-from config import s3dis_args, s3dis_warmup_args, dela_args, batch_size, learning_rate as lr, epoch, warmup, label_smoothing as ls
+from config import s3dis_args, s3dis_warmup_args, deepla_args, batch_size, learning_rate as lr, epoch, warmup, label_smoothing as ls
 
 torch.set_float32_matmul_precision("high")
 
@@ -66,7 +66,7 @@ testdlr = DataLoader(S3DIS(s3dis_args, partition="5", loop=1, train=False), batc
 
 step_per_epoch = len(traindlr)
 
-model = DeepLA_semseg(dela_args).cuda()
+model = DeepLA_semseg(deepla_args).cuda()
 
 optimizer = create_optimizer_v2(model, lr=lr, weight_decay=5e-2)
 scheduler = CosineLRScheduler(optimizer, t_initial = epoch * step_per_epoch, lr_min = lr/10000,
