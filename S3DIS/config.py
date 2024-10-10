@@ -26,21 +26,21 @@ s3dis_args.max_pts = 30000
 s3dis_warmup_args = deepcopy(s3dis_args)
 s3dis_warmup_args.grid_size = [0.04, 3.5, 3.5, 3.5]
 
-dela_args = SimpleNamespace()
-dela_args.ks = s3dis_args.k
-dela_args.depths = [20, 20, 60, 20]
-dela_args.dims = [64, 128, 256, 512]
-dela_args.nbr_dims = [32, 32]
-dela_args.head_dim = 256
-dela_args.num_classes = 13
+deepla_args = SimpleNamespace()
+deepla_args.ks = s3dis_args.k
+deepla_args.depths = [20, 20, 60, 20]
+deepla_args.dims = [64, 128, 256, 512]
+deepla_args.nbr_dims = [32, 32]
+deepla_args.head_dim = 256
+deepla_args.num_classes = 13
 drop_path = 0.1
 drop_rates = torch.linspace(0., drop_path, sum(dela_args.depths)).split(dela_args.depths)
-dela_args.drop_paths = [dpr.tolist() for dpr in drop_rates]
-dela_args.head_drops = torch.linspace(0., 0.15, len(dela_args.depths)).tolist()
-dela_args.bn_momentum = 0.02
-dela_args.act = nn.GELU
-dela_args.mlp_ratio = 1
+deepla_args.drop_paths = [dpr.tolist() for dpr in drop_rates]
+deepla_args.head_drops = torch.linspace(0., 0.15, len(dela_args.depths)).tolist()
+deepla_args.bn_momentum = 0.02
+deepla_args.act = nn.GELU
+deepla_args.mlp_ratio = 1
 # gradient checkpoint
-dela_args.use_cp = False
+deepla_args.use_cp = False
 
-dela_args.cor_std = [1.6, 3.2, 6.4, 12.8]
+deepla_args.cor_std = [1.6, 3.2, 6.4, 12.8]
