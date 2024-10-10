@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).absolute().parent.parent))
 import utils.util as util
-from config import s3dis_args, dela_args
+from config import s3dis_args, deepla_args
 from torch.cuda.amp import autocast
 from deepla_semseg import DeepLA_semseg
 
@@ -18,7 +18,7 @@ loop = 30
 testdlr = DataLoader(S3DIS(s3dis_args, partition="5", loop=loop, train=False, test=True), batch_size=1,
                       collate_fn=s3dis_test_collate_fn, pin_memory=True, num_workers=8)
 
-model = DeepLA_semseg(dela_args).cuda()
+model = DeepLA_semseg(deepla_args).cuda()
 util.load_state("pretrained/DeepLA-120.pt", model=model)
 model.eval()
 
