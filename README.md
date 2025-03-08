@@ -1,6 +1,6 @@
 # DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis
 
-Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation Networks for Point Cloud Analysis_**. 
+Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis (CVPR 2025)_**. 
 
 <div align='left'>
 <img src="figs/comparison.png" alt="teaser" width="37%" />
@@ -8,6 +8,7 @@ Here is the PyTorch implementation of the paper **_Very Deep Local Aggregation N
 </div>
 
 ## Highlights
+- *Feb, 2025*: DeepLA-Net is accepted at **CVPR 2025** :fire:!
 - *May, 2024*: We released the Full Code and Pretrain Weights of S3DIS. And the next step will be released after receiving clear review comments.
 - *Jan, 2024*: We released the model code of DeepLA-Net. 
 - *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
@@ -53,10 +54,6 @@ To make our polished code and reproduced experiments available as soon as possib
 
 ## Train & Test
 ### S3DIS
-- training on S3DIS:
-  ```
-  python train.py
-  ```
 - testing on S3DIS:
   ```
   python test.py
@@ -78,3 +75,14 @@ To make our polished code and reproduced experiments available as soon as possib
 
 ## Demo
 <p align="center"> <a href="https://youtu.be/kSZxvIsctQ4"><img src="figs/DeepLANet_demo.jpg" width="98%"></a> </p>
+
+## Reference
+If you find our work useful in your research, please consider citing:
+```latex
+@inproceedings{zeng2025deepla,
+  title={DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis},
+  author={Zeng, Ziyin and Dong, Mingyue and Zhou, Jian and Qiu, Huan and Dong, Zhen and Luo, Man and Li, Bijun},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025}
+}
+```
