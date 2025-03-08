@@ -13,16 +13,6 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 - *Jan, 2024*: We released the model code of DeepLA-Net. 
 - *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
 
-## Schedule
-To make our polished code and reproduced experiments available as soon as possible, this time we will release what we already finished immediately after a validation instead of releasing them together after all work is done. We list a task list as follows:
-
-- [x] Release model code of DeepLA-Net;
-- [x] Release scratched config of semantic segmentation;
-  - [ ] ScanNet
-  - [x] S3DIS
-- [ ] Release scratched config of object classification;
-- [ ] Release scratched config of part segmentation;
-
 ## Dependencies
 - Ubuntu: 18.04 or higher
 - PyTorch: 1.11.0 
