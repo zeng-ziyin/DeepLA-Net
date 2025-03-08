@@ -9,7 +9,7 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 
 ## Highlights
 - *Feb, 2025*: DeepLA-Net is accepted at **CVPR 2025** :fire:!
-- *May, 2024*: We released the Full Code and Pretrain Weights of S3DIS. And the next step will be released after receiving clear review comments.
+- *May, 2024*: We released the Test Code and Pretrain Weights of S3DIS.
 - *Jan, 2024*: We released the model code of DeepLA-Net. 
 - *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
 
