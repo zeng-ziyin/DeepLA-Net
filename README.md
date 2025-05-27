@@ -63,6 +63,10 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 - ResLFE_HDS means the two modules in our paper (Residual Local Feature Extraction "ResLFE" and Hybird Deep Supervision "HDS")
 <p align="center"> <img src="figs/scannet.png" width="100%"> </p>
 
+## Demo
+<p align="center"> <a href="https://www.youtube.com/watch?v=sqp6yFM-RI4"><img src="https://github.com/zeng-ziyin/DeepLA-Net/blob/main/figs/DeepLANet_demo.jpg" width="80%"></a> </p>
+
+
 ## Reference
 If you find our work useful in your research, please consider citing:
 ```latex
