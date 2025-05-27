@@ -64,7 +64,7 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 <p align="center"> <img src="figs/scannet.png" width="100%"> </p>
 
 ## Demo
-<p align="center"> <a href="https://www.youtube.com/watch?v=sqp6yFM-RI4"><img src="https://github.com/zeng-ziyin/DeepLA-Net/blob/main/figs/DeepLANet_demo.jpg" width="80%"></a> </p>
+<p align="center"> <a href="https://www.youtube.com/watch?v=sqp6yFM-RI4"><img src="https://github.com/zeng-ziyin/DeepLA-Net/blob/main/figs/DeepLA-Net_demo.jpg" width="80%"></a> </p>
 
 
 ## Reference
