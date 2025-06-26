@@ -119,7 +119,6 @@ for i in range(start_epoch, epoch):
         scaler.update()
         
     print(f"epoch {i}:")
-    print(f"loss: {round(ttls.avg, 4)} || cls: {round(corls.avg, 4)} || sem: {round(semls.avg, 4)}")
     metric.print("train:")
 
     model.eval()
