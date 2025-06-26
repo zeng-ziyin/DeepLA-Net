@@ -45,6 +45,10 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 
 ## Train & Test
 ### S3DIS
+- training on S3DIS:
+  ```
+  python train.py
+  ```
 - testing on S3DIS:
   ```
   python test.py
