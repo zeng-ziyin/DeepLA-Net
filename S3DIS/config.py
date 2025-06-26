@@ -28,7 +28,8 @@ s3dis_warmup_args.grid_size = [0.04, 3.5, 3.5, 3.5]
 
 deepla_args = SimpleNamespace()
 deepla_args.ks = s3dis_args.k
-deepla_args.depths = [20, 20, 60, 20]
+deepla_args.depths = [20, 20, 60, 20]  # DeepLA-120
+# deepla_args.depths = [10, 10, 30, 10]  # DeepLA-60
 deepla_args.dims = [64, 128, 256, 512]
 deepla_args.nbr_dims = [32, 32]
 deepla_args.head_dim = 256
