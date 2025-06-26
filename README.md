@@ -8,6 +8,7 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 </div>
 
 ## Highlights
+- *Jun, 2025*: We released the Train Code of S3DIS.
 - *Feb, 2025*: DeepLA-Net is accepted at **CVPR 2025** :fire:!
 - *May, 2024*: We released the Test Code and Pretrain Weights of S3DIS.
 - *Jan, 2024*: We released the model code of DeepLA-Net. 
