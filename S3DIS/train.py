@@ -13,7 +13,7 @@ from utils.timm.optim import create_optimizer_v2
 import utils.util as util
 from deepla_semseg import DeepLA_semseg
 from time import time, sleep
-from config import s3dis_args, s3dis_warmup_args, dela_args, batch_size, learning_rate as lr, epoch, warmup, label_smoothing as ls
+from config import s3dis_args, s3dis_warmup_args, deepla_args, batch_size, learning_rate as lr, epoch, warmup, label_smoothing as ls
 
 torch.set_float32_matmul_precision("high")
 
