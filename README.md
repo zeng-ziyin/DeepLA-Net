@@ -1,6 +1,6 @@
 # DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis
 
-Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis (CVPR 2025)_**. 
+Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis (CVPR 2025)_** [[paper](https://openaccess.thecvf.com/content/CVPR2025/html/Zeng_DeepLA-Net_Very_Deep_Local_Aggregation_Networks_for_Point_Cloud_Analysis_CVPR_2025_paper.html)]. 
 
 <div align='left'>
 <img src="figs/comparison.png" alt="teaser" width="37%" />
