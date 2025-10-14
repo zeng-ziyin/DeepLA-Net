@@ -7,13 +7,6 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 <img src="figs/DeepLA-Net.gif" alt="teaser" width="62%" />
 </div>
 
-## Highlights
-- *Jun, 2025*: We released the Train Code of S3DIS.
-- *Feb, 2025*: DeepLA-Net is accepted at **CVPR 2025** :fire:!
-- *May, 2024*: We released the Test Code and Pretrain Weights of S3DIS.
-- *Jan, 2024*: We released the model code of DeepLA-Net. 
-- *Dec, 2023*: We released our project repo for DeepLA-Net, if you have any questions related to our work, please feel free to open an issue.
-
 ## Dependencies
 - Ubuntu: 18.04 or higher
 - PyTorch: 1.11.0 
