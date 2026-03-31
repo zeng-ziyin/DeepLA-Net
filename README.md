@@ -3,8 +3,7 @@
 Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local Aggregation Networks for Point Cloud Analysis (CVPR 2025)_** [[paper](https://openaccess.thecvf.com/content/CVPR2025/html/Zeng_DeepLA-Net_Very_Deep_Local_Aggregation_Networks_for_Point_Cloud_Analysis_CVPR_2025_paper.html)]. 
 
 <div align='left'>
-<img src="figs/comparison.png" alt="teaser" width="37%" />
-<img src="figs/DeepLA-Net.gif" alt="teaser" width="62%" />
+<img src="figs/comparison.png" alt="teaser" width="50%" />
 </div>
 
 ## Dependencies
@@ -60,9 +59,6 @@ Here is the PyTorch implementation of the paper **_DeepLA-Net: Very Deep Local A
 - ScanNet Testset Segmentation Results. NO.1 among fully supervised methods, NO.5 among all methods. Note that, methods ranked before ours all used additional data for training.
 - ResLFE_HDS means the two modules in our paper (Residual Local Feature Extraction "ResLFE" and Hybird Deep Supervision "HDS")
 <p align="center"> <img src="figs/scannet.png" width="100%"> </p>
-
-## Demo
-<p align="center"> <a href="https://www.youtube.com/watch?v=sqp6yFM-RI4"><img src="https://github.com/zeng-ziyin/DeepLA-Net/blob/main/figs/DeepLA-Net_demo.jpg" width="80%"></a> </p>
 
 
 ## Reference
